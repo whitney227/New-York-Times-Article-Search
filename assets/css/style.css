@@ -1,0 +1,23 @@
+#title-box {
+  margin-top: -5rem;
+  background-color: rgb(8, 91, 105);
+}
+
+#title {
+  font-size: 4rem;
+  color: #ffffff;
+  margin-top: 1rem;
+}
+
+.card-header {
+  background-color: rgb(8, 91, 105);
+  color: #ffffff;
+}
+
+#search-button, #clear-button {
+  background-color: rgb(8, 91, 105)
+}
+
+#search-button:hover, #clear-button:hover {
+  background-color: rgb(13, 129, 150)
+}
