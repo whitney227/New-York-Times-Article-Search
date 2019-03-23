@@ -1,11 +1,9 @@
 
-//"search" is just a placeholder for whatever the submit button id will be
 
 $("#search-button").on("click", function(){
 
     var search = $(".form-control").val()
 
-    //again "search-form" is just a placeholder for whatever the form ID is
 
     var entryURL = "https://api.nytimes.com/svc/search/v2/articlesearch.json?q=" + search + "s&api-key=KxrAwEmYuev5f6ywZ8AP9McEYX7yXHac"
 
@@ -27,7 +25,6 @@ $("#search-button").on("click", function(){
         $("#media-headings").append(newArticle)
 
 
-        //results is not currently an element in the HTML
     });
 
 
