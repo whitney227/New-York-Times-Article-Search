@@ -1,9 +1,9 @@
 
 //"search" is just a placeholder for whatever the submit button id will be
 
-$("#search").on("click", function(){
+$("#search-button").on("click", function(){
 
-    var search = $("#search-form").val()
+    var search = $(".form-control").val()
 
     //again "search-form" is just a placeholder for whatever the form ID is
 
@@ -15,14 +15,17 @@ $("#search").on("click", function(){
     })
     .then(function(data) {
         console.log(data)
-
         var newArticle = $("<div>")
-        var newHeadline = $("<h1>")
+        var newHeadline = $("<h3>")
+        var newArtBody = $("<p>")
         console.log(data.response.docs[0].headline.main)
 
         newHeadline.text(data.response.docs[0].headline.main)
+        newArtBody.text(data.response.docs[0].lead_paragraph)
         newArticle.append(newHeadline)
-        $("#results").append(newArticle)
+        newArticle.append(newArtBody)
+        $("#media-headings").append(newArticle)
+
 
         //results is not currently an element in the HTML
     });
