@@ -13,8 +13,8 @@ $("#search").on("click", function(){
         url: entryURL,
         method: "GET"
     })
-    .then(function(response) {
-        console.log(response)
+    .then(function(data) {
+        console.log(data)
     });
 
 
