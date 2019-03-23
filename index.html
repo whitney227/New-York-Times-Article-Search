@@ -13,11 +13,13 @@
   </head>
 
   <body>
+    <!-- Input Group -->
     <div class="container mt-5">
       <div class="card">
         <h5 class="card-header">Search Parameters</h5>
         <div class="card-body">
 
+            <!-- Search Term -->
             <div class="input-group mb-3">
               <div class="input-group-prepend">
                 <span class="input-group-text" id="inputGroup-sizing-default">Search Term</span>
@@ -25,6 +27,7 @@
               <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
             </div>
 
+            <!-- Number of Records to Retrieve -->
             <div class="input-group mb-3">
               <div class="input-group-prepend">
                 <label class="input-group-text" for="inputGroupSelect01">Number of Records to Retrieve</label>
@@ -37,6 +40,7 @@
               </select>
             </div>
 
+            <!-- Start Year (optional) -->
             <div class="input-group mb-3">
               <div class="input-group-prepend">
                 <span class="input-group-text" id="inputGroup-sizing-default">Start Year (Optional)</span>
@@ -44,13 +48,19 @@
               <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
             </div>
 
-              <div class="input-group mb-3">
-                <div class="input-group-prepend">
-                  <span class="input-group-text" id="inputGroup-sizing-default">End Year (Optional)</span>
-                </div>
-                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+            <!-- End Year (optional) -->
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-default">End Year (Optional)</span>
               </div>
+              <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+            </div>
               
+            <!-- Buttons -->
+            <!-- Search -->
+            <button type="button" class="btn btn-secondary" id="search-button">Search</button>
+            <!-- Clear Results -->
+            <button type="button" class="btn btn-secondary" id="clear-button">Clear Results</button>
         </div>
       </div>
     </div> <!-- End Search Container -->
@@ -58,17 +68,11 @@
     <div class="container mt-5">
       <div class="card">
         <h5 class="card-header">Articles</h5>
-        <div class="card-body">
-            <div class="media">
-                <img src="..." class="mr-3" alt="...">
-                <div class="media-body">
-                  <h5 class="mt-0">Media heading</h5>
-                  Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-                </div>
-            </div>
+        <div class="card-body" id="media-headings">
+          <!-- APPEND MEDIA HEADINGS HERE -->
         </div>
       </div>
-    </div> <!-- End Display Container -->
+    </div> <!-- End Media Container -->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
