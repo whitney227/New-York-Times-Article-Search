@@ -15,6 +15,16 @@ $("#search").on("click", function(){
     })
     .then(function(data) {
         console.log(data)
+
+        var newArticle = $("<div>")
+        var newHeadline = $("<h1>")
+        console.log(data.response.docs[0].headline.main)
+
+        newHeadline.text(data.response.docs[0].headline.main)
+        newArticle.append(newHeadline)
+        $("#results").append(newArticle)
+
+        //results is not currently an element in the HTML
     });
 
 
