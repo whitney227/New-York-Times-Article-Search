@@ -8,17 +8,45 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
     <title>NY Times Article Search</title>
+
+    <style>
+      #title-box {
+        margin-top: -5rem;
+        background-color: rgb(48, 6, 48);
+      }
+
+      #title {
+        font-size: 4rem;
+        color: #ffffff;
+        margin-top: 1rem;
+      }
+
+      .card-header {
+        background-color: rgb(48, 6, 48);
+        color: #ffffff;
+      }
+
+    </style>
 
   </head>
 
   <body>
-    <!-- Input Group -->
+
     <div class="container mt-5">
+
+      <div class="jumbotron" id="title-box">
+        <h1 class="text-center" id="title"><i class="far fa-newspaper"></i> New York Times Search</h1>
+      </div>
+
       <div class="card">
         <h5 class="card-header">Search Parameters</h5>
-        <div class="card-body">
+      <div class="card-body">
 
+            <!-- Input Group -->
             <!-- Search Term -->
             <div class="input-group mb-3">
               <div class="input-group-prepend">
@@ -58,9 +86,9 @@
               
             <!-- Buttons -->
             <!-- Search -->
-            <button type="button" class="btn btn-secondary" id="search-button">Search</button>
+            <button type="button" class="btn btn-secondary" id="search-button"><i class="fas fa-search"></i> Search</button>
             <!-- Clear Results -->
-            <button type="button" class="btn btn-secondary" id="clear-button">Clear Results</button>
+            <button type="button" class="btn btn-secondary" id="clear-button"><i class="far fa-trash-alt"></i> Clear Results</button>
         </div>
       </div>
     </div> <!-- End Search Container -->
