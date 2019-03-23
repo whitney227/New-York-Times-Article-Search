@@ -1,7 +1,7 @@
 
 //"search" is just a placeholder for whatever the submit button id will be
 
-$("#search").on("click", function(event){
+$("#search").on("click", function(){
 
     var search = $("#search-form").val()
 
