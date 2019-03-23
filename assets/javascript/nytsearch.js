@@ -3,7 +3,7 @@
 $("#search-button").on("click", function(){
 
     var search = $(".form-control").val()
-
+    var resultsLength = $(".custom-select").val()
 
     var entryURL = "https://api.nytimes.com/svc/search/v2/articlesearch.json?q=" + search + "s&api-key=KxrAwEmYuev5f6ywZ8AP9McEYX7yXHac"
 
@@ -13,17 +13,19 @@ $("#search-button").on("click", function(){
     })
     .then(function(data) {
         console.log(data)
-        var newArticle = $("<div>")
-        var newHeadline = $("<h3>")
-        var newArtBody = $("<p>")
-        console.log(data.response.docs[0].headline.main)
 
-        newHeadline.text(data.response.docs[0].headline.main)
-        newArtBody.text(data.response.docs[0].lead_paragraph)
-        newArticle.append(newHeadline)
-        newArticle.append(newArtBody)
-        $("#media-headings").append(newArticle)
+        for (i=0; i < resultsLength; i++){
+            var newArticle = $("<div>")
+            var newHeadline = $("<h3>")
+            var newArtBody = $("<p>")
+            console.log(data.response.docs[i].headline.main)
 
+            newHeadline.text(data.response.docs[i].headline.main)
+            newArtBody.text(data.response.docs[i].lead_paragraph)
+            newArticle.append(newHeadline)
+            newArticle.append(newArtBody)
+            $("#media-headings").append(newArticle)
+        }
 
     });
 
