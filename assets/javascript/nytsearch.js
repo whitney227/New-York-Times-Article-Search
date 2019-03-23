@@ -32,3 +32,7 @@ $("#search-button").on("click", function(){
 
 
 })
+
+$("#clear-button").on("click", function(){
+    $("#media-headings").empty()
+})
