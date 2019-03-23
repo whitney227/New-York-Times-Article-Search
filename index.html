@@ -7,32 +7,88 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    
-    <!-- jQuery -->
-
-
-    <!-- Javascript -->
 
     <title>NY Times Article Search</title>
 
   </head>
+
   <body>
     <div class="container mt-5">
       <div class="card">
-        <h5 class="card-header">Search</h5>
+        <h5 class="card-header">Search Parameters</h5>
         <div class="card-body">
-          <h5 class="card-title">Special title treatment</h5>
-          <a href="#" class="btn btn-primary" id="search">Go somewhere</a>
+
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-default">Search Term</span>
+              </div>
+              <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+            </div>
+
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <label class="input-group-text" for="inputGroupSelect01">Number of Records to Retrieve</label>
+              </div>
+              <select class="custom-select" id="inputGroupSelect01">
+                <option selected>Choose...</option>
+                <option value="5">5</option>
+                <option value="10">10</option>
+                <option value="15">15</option>
+              </select>
+            </div>
+              
+              <div class="input-group mb-3">
+                <select class="custom-select" id="inputGroupSelect02">
+                  <option selected>Choose...</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+                <div class="input-group-append">
+                  <label class="input-group-text" for="inputGroupSelect02">Options</label>
+                </div>
+              </div>
+              
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <button class="btn btn-outline-secondary" type="button">Button</button>
+                </div>
+                <select class="custom-select" id="inputGroupSelect03" aria-label="Example select with button addon">
+                  <option selected>Choose...</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+              
+              <div class="input-group">
+                <select class="custom-select" id="inputGroupSelect04" aria-label="Example select with button addon">
+                  <option selected>Choose...</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+                <div class="input-group-append">
+                  <button class="btn btn-outline-secondary" type="button">Button</button>
+                </div>
+              </div>
         </div>
       </div>
     </div> <!-- End Search Container -->
 
     <div class="container mt-5">
-        <div class="card">
-          <h5 class="card-header">Articles</h5>
-          <div class="card-body">
-          </div>
+      <div class="card">
+        <h5 class="card-header">Articles</h5>
+        <div class="card-body">
+            <div class="media">
+                <img src="..." class="mr-3" alt="...">
+                <div class="media-body">
+                  <h5 class="mt-0">Media heading</h5>
+                  Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                </div>
+            </div>
         </div>
+      </div>
     </div> <!-- End Display Container -->
 
     <!-- Optional JavaScript -->
